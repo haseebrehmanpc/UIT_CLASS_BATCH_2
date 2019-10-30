@@ -1,0 +1,11 @@
+.main_content{
+    border: 1px solid black;
+    /* min-height: 50px; */
+    /* width: 50%; */
+    /* overflow: hidden; */
+}
+.inside-content{
+    min-width: 200px;
+    border: 1px solid black;
+    background-color: blue;
+}
