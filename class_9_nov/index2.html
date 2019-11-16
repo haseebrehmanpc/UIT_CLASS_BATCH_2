@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent_box {
+            position: relative;
+        }
+
+        .box1 {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            position: absolute;
+
+        }
+
+        /* .box1:hover {
+            z-index: 2;
+        } */
+
+        .box2 {
+            width: 250px;
+            height: 250px;
+            left: 10px;
+            background-color: green;
+            position: absolute;
+            /* z-index: 3; */
+        }
+
+        .box3 {
+            width: 250px;
+            height: 250px;
+            left: 20px;
+            background-color: blue;
+            position: absolute;
+            /* z-index: 4; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent_box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

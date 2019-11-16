@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .parent_box {
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+        }
+
+        .box {
+            /* min-width: 250px; */
+            height: 250px;
+            border: 1px solid red;
+        }
+
+        /* p {
+            display: inline-block;
+            width: 80%;
+        } */
+        p {
+            background: blue;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            height: 200px;
+            border: 1px solid red;
+            align-items: center;
+        }
+
+        .box6 {
+            order: -1;
+        }
+
+        .box5 {
+            order: -2;
+        }
+
+        .box1 {
+            flex-grow: 1;
+        }
+
+        .box6 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <p>Lorem ipsum, dolor sit amet!</p>
+        <span>X</span>
+    </div>
+    <div class="parent_box">
+        <div class="box box1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+
+    </div>
+
+
+</body>
+
+</html>
