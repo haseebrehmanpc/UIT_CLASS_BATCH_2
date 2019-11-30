@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var char = ['a', 'b', 'c', 'd', 'e', 'f']; //6 - 1; 5
+    var num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var roman = ["i", "ii", "iii", "iv", "v"];
+
+    for (var i = 0; i < char.length; i++) { // i = 1
+      for (var j = 0; j < num.length; j++) { // j < 9
+        for (var k = 0; k < roman.length; k++) { // j < 9
+          console.log(char[i] + num[j] + roman[k]); //a1 a2 a3 a9 b1 b2 b3
+        }
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
