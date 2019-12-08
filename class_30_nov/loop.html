@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // initialization; 0
+    // condition; 0 < 10
+    // moditifation;i++; i--
+    // var text = "Count: ";
+    // var i = 0; //
+    // for (i; i < 10; i++) { // 0 < 10 = true  1 < 10 = true 10 < 10    
+    //   alert(text + i)
+    // }
+
+    var cities = ['Khi', 'Isl', 'Lhr', 'Hyd', 'Fsl', 'dxb', 'NY'];
+    var city = prompt("Enter your city name."); // Khi
+    var result = false; //flag
+
+    for (var i = 0; i < cities.length; i++) {
+      if (city === cities[i]) {
+        result = true;
+        alert("Your city found.");
+        break;
+      }
+    }
+
+    if (result === false) {
+      alert("Your city is not found.")
+
+    }
+
+
+    // "abc" // string
+    // 123 // number
+    // true false // boolean
+
+
+
+
+  </script>
+</body>
+
+</html>
