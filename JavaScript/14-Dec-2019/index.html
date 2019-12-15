@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var names = ['Ali', 'Ayaz', 'Haseeb'];
+    var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var userName = prompt("Enter your name");
+    var isNameFound = false;
+
+    for (var i = 0; i < names.length; i++) {
+      if (userName === names[i]) {
+        alert("Your name found");
+        isNameFound = true;
+      }
+    }
+
+
+
+    if (isNameFound === false) {
+      alert("Your name not found.");
+    }
+
+    for (var j = 0; j < nums.length; j++) {
+      if (nums[j] % 2 === 0) {
+        alert("Even " + nums[j])
+      } else {
+        alert("Odd " + nums[j])
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

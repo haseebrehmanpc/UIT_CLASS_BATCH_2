@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function greetUser() {
+      var name = prompt("Please enter your name");
+      alert("Hello, " + name);
+    }
+    // greetUser()
+
+    function abc() {
+      printCountring();
+    }
+    var num = parseInt(prompt("Enter some number"));
+
+    function printCountring(start, end) { // parameters;
+      for (var i = start; i <= end; i++) {
+        console.log(i);
+      }
+    }
+    printCountring(5, 10); // arguments
+    printCountring(11, 100);
+    printCountring(1, 4);
+
+    // alert("hello world");
+  </script>
+  <script>
+  </script>
+</body>
+
+</html>
