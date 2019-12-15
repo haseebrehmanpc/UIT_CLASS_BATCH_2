@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var cityToCheck = prompt("Please enter your city");
+        // cityToCheck = cityToCheck.toLowerCase();
+        // var cleanestCities = ['lahore', 'islamabad','faisalabad'];
+        // for(var i=0;i<cleanestCities.length;i++){
+        //     console.log(i);
+        //     if(cityToCheck===cleanestCities[i]){
+        //         alert("Its one of the cleanest cities.")
+        //         break
+        //     }
+        // }
+
+
+        // var cityToCheck = prompt("Please enter your city");
+        // var firstChar = cityToCheck.slice(0,1)
+        // var someOtherChar = cityToCheck.slice(1)
+        // firstChar = firstChar.toUpperCase();
+        // someOtherChar = someOtherChar.toLowerCase();
+        // var cappedCity = firstChar + someOtherChar;
+        // alert(cappedCity);
+
+
+            // var month = prompt("Enter a month");
+            // var charsInMonth = month.length;
+            // var shortForm = month;
+            // if(charsInMonth>=3){
+            //     shortForm = month.slice(0,3);
+            //     alert(shortForm)
+            // }
+            
+                // var text = "We heard about World War II. And it was destructive.";
+                // for(var i=0;i<text.length;i++){
+                //     if(text.slice(i, i+12) == 'World War II'){
+                //         text =  text.slice(0,i) + "the Second World War" + text.slice(i+12)
+                //                 //We heard about + the Second World War + . And it was destructive.
+                //         console.log(text)
+                //         }
+                // }
+
+                var text = "We heard about World War II. And it was destructive.";
+                    var startingIndex = text.indexOf("World War II");
+                    text =  text.slice(0,startingIndex) + "the Second World War" + text.slice(startingIndex+12)
+                    console.log(text)
+                // for(var i=0;i<text.length;i++){
+                //     if(text.slice(i, i+12) == 'World War II'){
+                //         text =  text.slice(0,i) + "the Second World War" + text.slice(i+12)
+                //                 //We heard about + the Second World War + . And it was destructive.
+                //         console.log(text)
+                //         }
+                // }
+
+    </script>
+</body>
+</html>
