@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 14th December</title>
+</head>
+
+<body>
+
+    <script>
+        // var numberToString = 12.34;
+        // console.log(typeof numberToString)
+        // console.log(typeof numberToString.toString())    
+
+
+        // var price = 9.95;
+        // var taxRate = (6.5 / 100);
+        // var total = price + (price * taxRate);
+        // console.log(total)
+        // var roundOff = total.toFixed(2);
+        // console.log("$" + roundOff)
+        // var roundOffToZero = total.toFixed();
+        // console.log("$" + roundOffToZero)
+
+        var month = ['January', 'Febuaray', 'March',
+            'April', 'May', 'June', 'July', 'August',
+            'September', 'October', 'November', 'December'];
+
+        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        var dateNow = new Date();
+        var theMonth = dateNow.getMonth();
+        var theDay = dateNow.getDay();
+
+        var myString = "Current month is " + month[theMonth] + ". And the day is " + days[theDay];
+        console.log(myString)
+
+        // DD-MM-YYYY
+
+    </script>
+</body>
+
+</html>
