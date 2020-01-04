@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="p1" class="show" title>Hello world</p>
+  <button onclick="togglePara()">Toggle Para</button>
+  <script>
+    function togglePara() {
+      var p = document.getElementById("p1");
+      // console.log(p.hasAttribute("title"));
+      if (p.getAttribute("class") === 'show') {
+        p.setAttribute('class', 'hide');
+      } else {
+        // p.className = 'show';
+        p.setAttribute('class', 'show');
+
+      }
+      // if (p.hasAttribute('class')) {
+      //   p.className = '';
+      // } else {
+      //   p.className = 'hide';
+      // }
+    }
+
+
+  </script>
+</body>
+
+</html>

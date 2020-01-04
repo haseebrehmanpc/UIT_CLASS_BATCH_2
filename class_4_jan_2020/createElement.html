@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="div1"></div>
+  <button onclick="createPara()">Create Paragraph</button>
+
+  <script>
+    var count = 0;
+    function createPara() {
+      var div1 = document.getElementById("div1");
+      var newP = document.createElement("p");
+      var firstPara = div1.firstChild;
+
+      var paraText = document.createTextNode("Hello world" + (++count));
+      newP.appendChild(paraText);
+
+      // div1.appendChild(newP)
+      if (firstPara) {
+        div1.insertBefore(newP, firstPara.nextSibling)
+      } else {
+        div1.insertBefore(newP, firstPara)
+      }
+    }
+
+
+
+  </script>
+</body>
+
+</html>
