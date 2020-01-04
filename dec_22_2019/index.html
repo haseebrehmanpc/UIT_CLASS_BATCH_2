@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .image {
+            width: 20px;
+
+        }
+
+        .hidden {
+            opacity: 0.5;
+            /* display: none; */
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form onSubmit="event.preventDefault();checkAddress('email');">
+        <input type="text" id="phone">
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <!-- <form>
+        Zip<br />
+        <input type="text" id="zip" onblur="fillCity()">
+        <br />City<br />
+        <input type="text" id="city">
+    </form> -->
+    <!-- <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p> -->
+
+    <img src="images/logo1.png" id="before" onMouseover="swapPic();" onmouseout="showDefault()" class="image">
+</body>
+<script>
+
+    // function expandLoris() {
+    // var whatsThere = document.getElementById("slowLoris").innerHTML;
+    // console.log(slowLoris);
+    // var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. Slow lorises have a toxic bite, a rare trait among mammals.";
+    // document.getElementById("slowLoris").innerHTML = expandedParagraph;
+    // }
+
+    // function checkAddress(fieldId) {
+    //     var val = document.getElementByID(fieldId).value;
+    //     console.log(val);
+    //     if (val === "") {
+    //         alert("Email is required");
+    //     }
+    // }
+
+    // function fillCity() {
+    //     var cityName;
+    //     var zipEntered = document.getElementById('zip').value;
+    //     switch (zipEntered) {
+    //         case "60608":
+    //             cityName = "Chicago";
+    //             break;
+    //         case "68114":
+    //             cityName = "Omaha";
+    //             break;
+    //         case "53212":
+    //             cityName = "Milwaukee";
+    //             break;
+    //     }
+    //     document.getElementById('city').value = cityName;
+    // }
+
+    // function makeInvisible() {
+    //     document.getElementById("ugly").className += " hidden border";
+    // }
+
+    function swapPic() {
+        document.getElementById("before").src = "images/logo2.jpg";
+    }
+
+    function showDefault() {
+        document.getElementById('before').style.margin = "0 10px 0 10px;"
+        console.log(document.getElementById('before').style)
+        // document.getElementById('before').style.width = "50px";
+        // document.getElementById("before").src = "images/logo1.png";
+        // var image = document.getElementById("before");
+        // image.src = "images/logo1.png";
+    }
+</script>
+
+</html>

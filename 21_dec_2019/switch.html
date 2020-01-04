@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var now = new Date();
+        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat'];
+        var day = days[now.getDay()]; // 0 - 6;
+
+        // var day = prompt("Enter current day");
+
+        switch (day) {
+            case 'Sun':
+            case 'Sat': {
+                alert('Whoopee!')
+                break;
+            }
+            case 'Fri': {
+                alert("TGIF");
+                break;
+
+            }
+            default: {
+                alert("Shoot me now!")
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
