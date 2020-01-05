@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var plan1 = {
+      name: 'Basic',
+      price: 3.99,
+      space: 50,
+      transfer: 1000,
+      pages: 10,
+      discountMonths: [1, 2, 3],
+      dummy: {
+        name: 'dummy 1'
+      }
+    }
+    var plan2 = {};
+    plan2.name = 'Prof';
+
+    console.log('The cost of ' + plan1.name + ' is monthly $' + plan1.price);
+
+    plan1.price = 4.99;
+    plan1.discount = 10;
+    var newPrice = plan1.price - (plan1.price / 100 * 10) // 1 .9 .8
+
+    console.log('The cost of ' + plan1.name + ' is monthly $' + (newPrice.toFixed(2)));
+    // delete plan1.discount;
+    plan1.discount = 0;
+    console.log(plan1.discount)
+    // var p1 = document.getElementById("p1");
+    console.log(plan1.dummy.name);
+    // p1.className = 'big';
+
+
+  </script>
+</body>
+
+</html>

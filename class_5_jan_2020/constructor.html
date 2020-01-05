@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function Plan(name, price, space, transfer, pages, discountMonths) {
+      this.name = name;
+      this.price = price;
+      this.diskSpace = space;
+      this.transfer = transfer;
+      this.pages = pages;
+      this.discountMonths = discountMonths;
+      this.calcAnnual = function () {
+        var bestPrice = this.price;
+        var currentDate = new Date()
+        var currentMonth = currentDate.getMonth();
+        for (var i = 0; i < this.discountMonths.length; i++) {
+          if (currentMonth === this.discountMonths[i]) {
+            bestPrice = this.price * .8;
+            break;
+          }
+        }
+        return bestPrice * 12;
+      }
+    }
+    // var date = new Date();
+    var plan1 = new Plan('Basic', 3.99, 500, 1000, 10, [0, 1]);
+    var plan2 = new Plan('Professional', 5.99, 500, 1000, 10, [1, 2]);
+    console.log(plan1.calcAnnual())
+    console.log(plan2.calcAnnual())
+  </script>
+</body>
+
+</html>

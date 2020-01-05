@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var plan1 = {
+      name: 'Basic',
+      price: 3.99,
+      space: 50,
+      transfer: 1000,
+      pages: 10,
+      discountMonths: [0, 1, 2],
+      calcAnnual: function () {
+        var bestPrice = this.price;
+        var currentDate = new Date()
+        var currentMonth = currentDate.getMonth();
+        for (var i = 0; i < this.discountMonths.length; i++) {
+          if (currentMonth === this.discountMonths[i]) {
+            bestPrice = this.price * .8;
+            break;
+          }
+        }
+        return bestPrice * 12;
+      },
+      dummy: {
+        name: 'dummy 1'
+      }
+    }
+    var plan2 = {
+      name: 'Professional',
+
+    }
+    var plan3 = {
+
+    }
+    console.log('The cost of ' + plan1.name + ' price annually is ' + plan1.calcAnnual());
+    // var plan2 = {}
+    // plan2.name = 'Prof';
+    // var s = "space"
+    // var isSpaceProExist = s in plan1;
+    // console.log("Is Space Exist " + isSpaceProExist)
+
+  </script>
+</body>
+
+</html>
