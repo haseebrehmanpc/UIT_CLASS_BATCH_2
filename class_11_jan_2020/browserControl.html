@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="#section1">section 1</a>
+  <p id="section1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cupiditate iusto rerum labore
+    sapiente
+    voluptatibus, eligendi, itaque perferendis neque cum blanditiis inventore porro pariatur iure, doloribus impedit
+    ipsum aliquam reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam mollitia
+    voluptatibus eaque. Ea nostrum quibusdam magnam vel, amet eaque sapiente ratione sint provident quidem blanditiis
+    porro quod, id labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit amet officiis earum a labore
+    doloribus dolorum, reprehenderit in vero aperiam sint facilis commodi! Incidunt vitae magnam id amet repellendus
+    sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique cum cupiditate distinctio molestias
+    sapiente at quidem possimus consequuntur fugiat consectetur ex dicta ipsum iure doloremque aliquam deserunt, animi
+    eos? At!</p>
+  <button onclick="gotoForIn()">For In example Code</button>
+  <button onclick="reload(true)">Reload from Server</button>
+  <button onclick="reload(false)">Reload from Cache</button>
+  <script>
+    function reload(refreshNew) {
+      window.location.reload(refreshNew);
+    }
+
+    function gotoForIn() {
+      // window.location.assign("file:///E:/Arsalan/uit-classes/UIT_CLASS_BATCH_2/class_11_jan_2020/browserControl2.html#section2")
+      window.location.replace("file:///E:/Arsalan/uit-classes/UIT_CLASS_BATCH_2/class_11_jan_2020/browserControl2.html#section2")
+      // location.href = "file:///E:/Arsalan/uit-classes/UIT_CLASS_BATCH_2/class_11_jan_2020/browserControl2.html#section2"
+    }
+
+  </script>
+</body>
+
+</html>

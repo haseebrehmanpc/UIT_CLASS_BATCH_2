@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+
+    function User(firstName, lastName, email, password) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.email = email;
+      this.password = password;
+      // this.valueOf = function () {
+      //   console.log('this is user constructor value of method')
+      // }
+      // this.getFullName = function () {
+      //   console.log(this);
+      //   return this.firstName + this.lastName
+      // }
+    }
+
+    User.prototype.getFullName = function () {
+      return this.firstName + this.lastName
+    }
+
+    User.prototype.valueOf = function () {
+      console.log('this is user prototype value of method')
+
+    }
+
+    var user1 = new User("Mohammad", "Azlan", "azlan@gmail.com", "12345");
+    var user2 = new User("Mohammad", "Arsalan", "azlan@gmail.com", "12345");
+    var listOfProperties = []
+    for (var key in user1) {
+      console.log(key)
+      if (user1.hasOwnProperty(key)) {
+        listOfProperties.push(key);
+      }
+    }
+    console.log(listOfProperties);
+  </script>
+</body>
+
+</html>
